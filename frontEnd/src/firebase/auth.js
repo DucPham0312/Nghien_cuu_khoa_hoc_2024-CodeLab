@@ -1,4 +1,4 @@
-import { auth } from "./firebase";
+import { auth } from "./Firebase";
 import { getFirestore, doc, setDoc } from "firebase/firestore";
 
 import {

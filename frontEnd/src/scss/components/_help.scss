@@ -1,4 +1,4 @@
-// The code was written by programmer Truong Tuan Anh
+// The code was written by programmer CodeLab
 // Thanks for watching and sharing
 
 @use "../abstracts";
@@ -6,7 +6,7 @@
   position: fixed;
   width: 400px;
   right: 60px;
-  bottom: 200px;
+  bottom: 100px;
   display: flex;
   flex-direction: column-reverse;
   @include abstracts.breakpoint(md) {

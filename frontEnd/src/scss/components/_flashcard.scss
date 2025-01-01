@@ -1,0 +1,278 @@
+// The code was written by programmer CodeLab
+// Thanks for watching and sharing
+
+@use "../abstracts";
+.flashcard {
+  &__wrap {
+    margin-top: 60px;
+  }
+  &__content {
+    width: 100%;
+  }
+
+  &__heading {
+    width: 400px;
+    background: var(--background-linear);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 123.81%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include abstracts.breakpoint(md) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__connect--heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color-main-light-2);
+    margin-top: 40px;
+    @include abstracts.breakpoint(md) {
+      margin-top: 30px;
+      font-size: 1.4rem;
+    }
+  }
+  &__connect--list {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  &__desc {
+    max-width: 100%;
+    margin-top: 18px;
+    color: var(--color-text-2);
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 128%;
+    @include abstracts.breakpoint(md) {
+      font-size: 0.8rem;
+    }
+  }
+  &__list {
+    margin-top: 50px;
+  }
+  &__image {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    @include abstracts.breakpoint(md) {
+      height: 171px;
+    }
+  }
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  &__routePlants--item,
+  &__item {
+    padding: 20px;
+    border-radius: 20px;
+    background: var(--background__studyplant-item);
+    box-shadow: 0px 20px 60px 10px var(--boxShadow--studyPlant-item);
+  }
+  &__item + &__item {
+    margin-top: 50px;
+    @include abstracts.breakpoint(md) {
+      margin-top: 30px;
+    }
+  }
+  &__content-title {
+    color: var(--text-color-main-light);
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 123.81%;
+    @include abstracts.breakpoint(md) {
+      font-size: 1.2rem;
+    }
+  }
+  &__content--desc {
+    max-width: 100%;
+    margin-top: 25px;
+    color: var(--color-text-2);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 158%;
+    @include abstracts.breakpoint(md) {
+      margin-top: 10px;
+      font-size: 0.8rem;
+    }
+  }
+  &__button {
+    margin-top: 20px;
+    width: 300px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 123.81%;
+    transition: all 0.2s ease;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
+    @include abstracts.breakpoint(md) {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  &__highlight {
+    color: var(--main-color);
+  }
+  &__progress {
+    width: 100%;
+  }
+  &__progress-wrapper {
+    margin-top: 20px;
+    width: 100%;
+    height: 15px;
+    background-color: var(--background-flashcard);
+    border-radius: 20px;
+    overflow: hidden; /* Đảm bảo các góc bo tròn */
+  }
+
+  &__progress {
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none; /* Bỏ đường viền mặc định */
+  }
+
+  &__progress::-webkit-progress-bar {
+    background-color: var(--background-flashcard);
+    border-radius: 20px; /* Áp dụng bo góc */
+  }
+
+  &__progress::-webkit-progress-value {
+    background-color: #45f594;
+    border-radius: 20px; /* Bo góc cho phần đã hoàn thành */
+  }
+
+  &__progress::-moz-progress-bar {
+    background-color: #45f594;
+    border-radius: 20px; /* Đối với Firefox */
+  }
+  &__number {
+    margin-top: 60px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color-main-light);
+    @include abstracts.breakpoint(md) {
+      margin-top: 40px;
+    }
+  }
+  &__question {
+    margin-top: 30px;
+    &--heading {
+      color: var(--text-color-main-light);
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 128%;
+      @include abstracts.breakpoint(md) {
+        font-size: 1.4rem;
+      }
+    }
+    &--desc {
+      color: var(--color-text-2);
+      margin-top: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 128%;
+    }
+  }
+
+  &__answer--item {
+    cursor: pointer;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-flashcard);
+    padding: 20px;
+    border-radius: 10px;
+    animation: all 0.2s ease;
+  }
+  &__answer {
+    user-select: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-color-main-light);
+    @include abstracts.breakpoint(md) {
+      font-size: 1rem;
+    }
+  }
+  &__colorText {
+    color: inherit !important;
+  }
+  &__submit--answer {
+    margin-top: 150px;
+    background: var(--background-flashcard);
+    margin-bottom: 100px;
+    border-radius: 10px;
+    @include abstracts.breakpoint(md) {
+      margin-top: 60px;
+    }
+  }
+  &__submit {
+    width: 100%;
+    background: #1ea1ff;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ffff;
+    user-select: none;
+    @include abstracts.breakpoint(md) {
+      font-size: 1rem;
+    }
+    &--default {
+      background: var(--background-default-button);
+      color: #ffff;
+      cursor: default;
+    }
+  }
+  &__result {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
+  }
+  &__result--answer {
+    width: 100%;
+    line-height: 128%;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color-main-light);
+    @include abstracts.breakpoint(md) {
+      font-size: 0.8rem;
+    }
+  }
+  &__icon--result {
+    width: 30px;
+    height: 30px;
+  }
+  &__success {
+    border: 1px solid #48bd79 !important;
+    background: var(--success-answer-background);
+  }
+  &__error {
+    border: 1px solid #cc5140 !important;
+    background: var(--failure-answer-background);
+  }
+  &__active {
+    border: 1px solid #0093fc;
+  }
+}

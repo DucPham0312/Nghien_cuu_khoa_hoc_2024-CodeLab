@@ -1,3 +1,6 @@
+// The code was written by programmer CodeLab
+// Thanks for watching and sharing
+
 @use "../abstracts";
 .ant-menu-item {
   margin-top: 20px !important;
@@ -61,4 +64,221 @@
 }
 .ant-menu-item-selected {
   background: var(--background-active-color) !important;
+}
+#nprogress .bar {
+  background: #9796f0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 4px; /* Độ dày vừa phải */
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 50%; /* Giả lập đang tải được 50% */
+  border-radius: 20px;
+}
+
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  opacity: 1;
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+  transform: rotate(3deg) translate(0px, -4px);
+  box-shadow: 0 0 10px rgba(255, 105, 135, 0.8), 0 0 5px rgba(255, 152, 0, 0.6); /* Bóng mờ chạy theo */
+}
+.slick-track {
+  width: 100%;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 65px;
+  height: 117px;
+  position: relative;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #ff8001;
+  box-shadow: 0 0 0 50px;
+  clip-path: polygon(
+    100% 0,
+    23% 46%,
+    46% 44%,
+    15% 69%,
+    38% 67%,
+    0 100%,
+    76% 57%,
+    53% 58%,
+    88% 33%,
+    60% 37%
+  );
+}
+.loader:after {
+  animation: l8 1s infinite;
+  transform: perspective(300px) translateZ(0px);
+}
+@keyframes l8 {
+  to {
+    transform: perspective(300px) translateZ(180px);
+    opacity: 0;
+  }
+}
+.loader-text {
+  width: fit-content;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: var(--text-color-main-light);
+  font-size: 2rem;
+  padding-bottom: 8px;
+  background: linear-gradient(currentColor 0 0) 0 100%/0% 3px no-repeat;
+  animation: l2 2s linear infinite;
+}
+.loader:before {
+  content: "Loading...";
+}
+@keyframes l2 {
+  to {
+    background-size: 100% 3px;
+  }
+}
+.loader__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 300px;
+}
+/* HTML: <div class="loader"></div> */
+.loader-text-1 {
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  display: inline-grid;
+  &::before,
+  &::after {
+    content: "Loading...";
+    grid-area: 1/1;
+    -webkit-mask: linear-gradient(90deg, #000 50%, #0000 0) 0 50%/2ch 100%;
+    animation: l11 1s infinite cubic-bezier(0.5, 220, 0.5, -220);
+  }
+  &::after {
+    -webkit-mask-position: 1ch 50%;
+    --s: -1;
+  }
+}
+
+/* Tăng chiều rộng và căn giữa editor */
+.ql-container {
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* Thay đổi giao diện khung chứa editor */
+.ql-editor {
+  min-height: 300px;
+  padding: 20px;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  background: var(--background-color-main);
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  line-height: 1.6;
+  color: var(--text-color-main-light);
+}
+
+/* Điều chỉnh giao diện thanh công cụ */
+.ql-toolbar {
+  background: var(--background-color-main);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Thay đổi màu sắc các nút trong thanh công cụ */
+.ql-toolbar button {
+  border-radius: 5px;
+  margin: 0 5px;
+  padding: 5px;
+}
+
+.ql-toolbar button:hover {
+  background-color: #eeee;
+}
+
+/* Các nút trong toolbar khi active */
+.ql-toolbar button.ql-active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Thêm hiệu ứng cho blockquote */
+.ql-editor blockquote {
+  border-left: 4px solid #007bff;
+  margin: 20px 0;
+  padding-left: 15px;
+  color: #555;
+  font-style: italic;
+}
+
+/* Hiển thị danh sách đẹp hơn */
+.ql-editor ol,
+.ql-editor ul {
+  padding-left: 40px;
+}
+
+.ql-editor li {
+  margin-bottom: 10px;
+}
+
+/* Tuỳ chỉnh màu chữ cho các liên kết */
+.ql-editor a {
+  color: #007bff;
+  text-decoration: underline;
+}
+.ql-picker-options {
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.ql-snow .ql-tooltip {
+  border-radius: 10px;
+  padding: 20px;
+}
+.ql-snow .ql-fill,
+.ql-snow .ql-stroke {
+  stroke: var(--stroke-tool-bar);
+}
+
+.ql-snow .ql-picker.ql-header .ql-picker-label::before {
+  color: var(--text-color-main-light) !important;
+}
+
+.ql-snow .ql-tooltip {
+  background: var(--background-color-main);
+  border: 1px solid #ccc;
+  color: var(--text-color-main-light) !important;
+}
+.ql-snow .ql-tooltip {
+  left: 40.125px !important;
+  top: 37.6px !important;
+}
+.controls__wrap {
+  display: flex;
+  position: relative;
+  gap: 20px;
 }

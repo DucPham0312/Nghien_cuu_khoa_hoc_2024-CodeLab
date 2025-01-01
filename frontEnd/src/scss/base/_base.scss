@@ -16,6 +16,16 @@ body {
   color: var(--text-color);
   background: var(--body-bg);
 }
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #fafafa;
+}
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+  border-radius: 50px;
+}
 
 a {
   color: inherit;
@@ -65,11 +75,11 @@ textarea:-webkit-autofill:hover {
 
 i,
 em {
-  font-style: italic;
+  font-style: italic !important;
 }
 b,
 strong {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 .line-clamp {
   display: -webkit-box;

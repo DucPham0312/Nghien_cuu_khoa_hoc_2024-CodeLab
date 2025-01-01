@@ -1,4 +1,4 @@
-// The code was written by programmer Truong Tuan Anh
+// The code was written by programmer CodeLab
 // Thanks for watching and sharing
 
 @use "../abstracts";
@@ -32,6 +32,7 @@
   &__img {
     margin-top: 50px;
     width: 600px;
+    max-height: 532px;
     @include abstracts.breakpoint(lg) {
       width: 450px;
     }
@@ -80,7 +81,7 @@
       width: 460px;
       color: var(--main-color-grey-3);
       text-align: center;
-      font-size: 0.8rem;
+      font-size: 1rem;
       font-weight: 500;
       line-height: 146.667%;
       @include abstracts.breakpoint(xl) {

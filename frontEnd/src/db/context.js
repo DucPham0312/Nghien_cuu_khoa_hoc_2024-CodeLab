@@ -1,9 +1,9 @@
-// The code was written by programmer Truong Tuan Anh
+// The code was written by programmer CodeLab
 // Thanks for watching and sharing
 
 import { createContext } from "react";
 const store = {
-  name: "Truong Tuan Anh",
+  name: "CodeLab",
 };
 const StoreContext = createContext(store);
 export default StoreContext;

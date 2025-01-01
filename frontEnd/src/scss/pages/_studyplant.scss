@@ -1,4 +1,4 @@
-// The code was written by programmer Truong Tuan Anh
+// The code was written by programmer CodeLab
 // Thanks for watching and sharing
 
 @use "../abstracts";
@@ -102,14 +102,15 @@
     }
   }
   &__button {
-    margin-top: 40px;
+    margin-top: 20px;
     width: 300px;
     font-size: 1.1rem;
     font-weight: 700;
     line-height: 123.81%;
     transition: all 0.2s ease;
+    text-decoration: underline;
     &:hover {
-      color: inherit;
+      text-decoration: underline;
     }
     @include abstracts.breakpoint(md) {
       width: 100%;

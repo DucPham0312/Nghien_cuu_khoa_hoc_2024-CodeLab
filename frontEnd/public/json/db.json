@@ -2,131 +2,80 @@
   "slideShow": [
     {
       "id": 1,
-      "img": "/images/slideshow/slide4.jpg"
+      "img": "https://firebasestorage.googleapis.com/v0/b/codelab-14068.appspot.com/o/slideshow%2F1.png?alt=media&token=a9804531-b5b7-4f1c-b130-d19630e765b4"
     },
     {
       "id": 2,
-      "img": "/images/slideshow/slide2.png"
+      "img": "https://firebasestorage.googleapis.com/v0/b/codelab-14068.appspot.com/o/slideshow%2F2.png?alt=media&token=fbdf3f3f-cbb2-4e55-a5f5-cd13858f65b3"
     },
     {
       "id": 3,
-      "img": "/images/slideshow/slide4.jpg"
+      "img": "https://firebasestorage.googleapis.com/v0/b/codelab-14068.appspot.com/o/slideshow%2F3.png?alt=media&token=49af7cb2-6b82-4d93-8152-e13aa26b22ab"
     },
     {
       "id": 4,
-      "img": "/images/slideshow/slide4.jpg"
-    }
-  ],
-  "courses": [
-    {
-      "id": 1,
-      "img": "/images/courses/item1.png",
-      "title": "HTML và CSS",
-      "desc": "HTML (HyperText Markup Language) là ngôn ngữ dùng để tạo cấu trúc và nội dung cho trang web. HTML sử dụng các thẻ (tags) để xác định các thành phần khác nhau của một trang, chẳng hạn như tiêu đề, đoạn văn, hình ảnh, liên kết, bảng biểu, và các phần tử đa phương tiện khác. lorem",
-      "price": "Miễn phí",
-      "time": "15 phút đọc"
-    },
-    {
-      "id": 2,
-      "img": "/images/courses/item2.png",
-      "title": "JavaScript",
-      "desc": "HTML (HyperText Markup Language) là ngôn ngữ dùng để tạo cấu trúc và nội dung cho trang web. HTML sử dụng các thẻ (tags) để xác định các thành phần khác nhau của một trang, chẳng hạn như tiêu đề, đoạn văn, hình ảnh, liên kết, bảng biểu, và các phần tử đa phương tiện khác. ....",
-      "price": "Miễn phí",
-      "time": "15 phút đọc"
-    },
-    {
-      "id": 3,
-      "img": "/images/courses/item3.png",
-      "title": "HTML và CSS",
-      "desc": "HTML (HyperText Markup Language) là ngôn ngữ dùng để tạo cấu trúc và nội dung cho trang web. HTML sử dụng các thẻ (tags) để xác định các thành phần khác nhau của một trang, chẳng hạn như tiêu đề, đoạn văn, hình ảnh, liên kết, bảng biểu, và các phần tử đa phương tiện khác. ....",
-      "price": "Miễn phí",
-      "time": "15 phút đọc"
-    },
-    {
-      "id": 4,
-      "img": "/images/courses/item1.png",
-      "title": "HTML và CSS",
-      "desc": "HTML (HyperText Markup Language) là ngôn ngữ dùng để tạo cấu trúc và nội dung cho trang web. HTML sử dụng các thẻ (tags) để xác định các thành phần khác nhau của một trang, chẳng hạn như tiêu đề, đoạn văn, hình ảnh, liên kết, bảng biểu, và các phần tử đa phương tiện khác. ....",
-      "price": "Miễn phí",
-      "time": "15 phút đọc"
+      "img": "https://firebasestorage.googleapis.com/v0/b/codelab-14068.appspot.com/o/slideshow%2F4.png?alt=media&token=6ea221fa-06ff-4fd2-9c67-83c00b4089cf"
     },
     {
       "id": 5,
-      "img": "/images/courses/item2.png",
-      "title": "HTML và CSS",
-      "desc": "HTML (HyperText Markup Language) là ngôn ngữ dùng để tạo cấu trúc và nội dung cho trang web. HTML sử dụng các thẻ (tags) để xác định các thành phần khác nhau của một trang, chẳng hạn như tiêu đề, đoạn văn, hình ảnh, liên kết, bảng biểu, và các phần tử đa phương tiện khác. ....",
-      "price": "Miễn phí",
-      "time": "15 phút đọc"
+      "img": "https://firebasestorage.googleapis.com/v0/b/codelab-14068.appspot.com/o/slideshow%2F5.png?alt=media&token=8bd6b310-faf9-4669-8dc7-87de678abef1"
     },
     {
       "id": 6,
-      "img": "/images/courses/item3.png",
-      "title": "HTML và CSS",
-      "desc": "HTML (HyperText Markup Language) là ngôn ngữ dùng để tạo cấu trúc và nội dung cho trang web. HTML sử dụng các thẻ (tags) để xác định các thành phần khác nhau của một trang, chẳng hạn như tiêu đề, đoạn văn, hình ảnh, liên kết, bảng biểu, và các phần tử đa phương tiện khác. ....",
-      "price": "Miễn phí",
-      "time": "15 phút đọc"
-    },
-    {
-      "id": 7,
-      "img": "/images/courses/item2.png",
-      "title": "HTML và CSS",
-      "desc": "HTML (HyperText Markup Language) là ngôn ngữ dùng để tạo cấu trúc và nội dung cho trang web. HTML sử dụng các thẻ (tags) để xác định các thành phần khác nhau của một trang, chẳng hạn như tiêu đề, đoạn văn, hình ảnh, liên kết, bảng biểu, và các phần tử đa phương tiện khác. ....",
-      "price": "Miễn phí",
-      "time": "15 phút đọc"
-    },
-    {
-      "id": 8,
-      "img": "/images/courses/item2.png",
-      "title": "HTML và CSS",
-      "desc": "HTML (HyperText Markup Language) là ngôn ngữ dùng để tạo cấu trúc và nội dung cho trang web. HTML sử dụng các thẻ (tags) để xác định các thành phần khác nhau của một trang, chẳng hạn như tiêu đề, đoạn văn, hình ảnh, liên kết, bảng biểu, và các phần tử đa phương tiện khác. ....",
-      "price": "Miễn phí",
-      "time": "15 phút đọc"
+      "img": "https://firebasestorage.googleapis.com/v0/b/codelab-14068.appspot.com/o/slide4.png?alt=media&token=ce52b743-80f2-40d2-9360-ed0d5290970f"
     }
   ],
-  "shares": [
+  "videos": [
     {
       "id": 1,
-      "img": "/images/shares/item1.png",
+      "link": "https://www.youtube.com/watch?v=xioxrWXR1Q0&t=729s",
       "title": "ESLint là gì? Hướng dẫn cấu hình ESLint cho dự án Typescript",
-      "time": "17 July 2024",
-      "viewers": 2678
+      "time": "3 năm trước",
+      "viewers": 2678,
+      "thumbnail": "https://img.youtube.com/vi/xioxrWXR1Q0/0.jpg"
     },
     {
       "id": 2,
-      "img": "/images/shares/item2.png",
-      "title": "Python là gì? Những đặc điểm nổi bật và Ứng dụng của Python",
-      "time": "17 July 2024",
-      "viewers": 2678
+      "link": "https://www.youtube.com/watch?v=ogkbC0uxWTE&t=164s",
+      "title": "Bí kíp đưa website lên mạng cực dễ dàng với Github Pages",
+      "time": "3 năm trước",
+      "viewers": 2678,
+      "thumbnail": "https://img.youtube.com/vi/ogkbC0uxWTE/0.jpg"
     },
     {
       "id": 3,
-      "img": "/images/shares/item3.png",
-      "title": "Functional Programming là gì? Giải pháp cho Hệ thống đa luồng và Xử lý song song",
-      "time": "17 July 2024",
-      "viewers": 2678
+      "link": "https://www.youtube.com/watch?v=HdnAEn2lLxo",
+      "title": "BÍ KÍP CODE ĐƯỢC THÀNH THẠO - TẠO SAO MÌNH THẤY CODE DỄ ĐẾN VẬY ???",
+      "time": "2 năm trước",
+      "viewers": 2678,
+      "thumbnail": "https://img.youtube.com/vi/HdnAEn2lLxo/0.jpg"
     },
     {
       "id": 4,
-      "img": "/images/shares/item1.png",
-      "title": "How to become a pro web designer in 2022 and get remot job?",
-      "time": "17 July 2024",
-      "viewers": 2678
+      "link": "https://www.youtube.com/watch?v=J-LDnpmleNk",
+      "title": "NẾU MÌNH BIẾT NHỮNG ĐIỀU NÀY THÌ ĐỜI LẬP TRÌNH VIÊN CỦA MÌNH ĐÃ KHÁC - NHỮNG ĐIỀU NÊN BIẾT CỦA CODER",
+      "time": "2 năm trước",
+      "viewers": 2678,
+      "thumbnail": "https://img.youtube.com/vi/J-LDnpmleNk/0.jpg"
     },
     {
       "id": 5,
-      "img": "/images/shares/item2.png",
-      "title": "Functional Programming là gì? Giải pháp cho Hệ thống đa luồng và Xử lý song song",
-      "time": "17 July 2024",
-      "viewers": 2678
+      "link": "https://www.youtube.com/watch?v=s8XpnY7gP2E",
+      "title": "Lộ trình học lập trình giao diện web frontend",
+      "time": "2 năm trước",
+      "viewers": 2678,
+      "thumbnail": "https://img.youtube.com/vi/s8XpnY7gP2E/0.jpg"
     },
     {
       "id": 6,
-      "img": "/images/shares/item3.png",
-      "title": "Functional Programming là gì? Giải pháp cho Hệ thống đa luồng và Xử lý song song",
-      "time": "17 July 2024",
-      "viewers": 2678
+      "link": "https://img.youtube.com/vi/jR-n-cQnpNI/0.jpg",
+      "title": "#0 Demo Kết Quả Đạt Được Khi Kết Thúc Khóa Học | Backend RESTFul Server với Node.JS (SQL/MongoDB)",
+      "time": "1 năm trước",
+      "viewers": 2678,
+      "thumbnail": "https://img.youtube.com/vi/s8XpnY7gP2E/0.jpg"
     }
   ],
+
   "blog": {
     "newFeeds": [
       {
@@ -154,56 +103,56 @@
       }
     ]
   },
-  "studyroute": [
+  "studyRoute": [
     {
       "id": 1,
       "img": "/images/routeplant/route1.png",
-      "link": "/codelab/studyplant/frontEnd",
+      "link": "/studyplant/frontEnd",
       "title": "Lộ trình Font-End",
-      "description": "Học cách sử dụng HTML, CSS, và JavaScript để thiết kế các trang web tương tác, thân thiện với người dùng. Khóa học cũng bao gồm các framework như React, Bootstrap, và Tailwind, cùng với kỹ năng phát triển responsive web và tối ưu hóa hiệu suất.."
+      "description": "Học HTML, CSS, JavaScript cùng các framework như React, Bootstrap, Tailwind để thiết kế web tương tác, responsive và tối ưu hiệu suất."
     },
     {
       "id": 2,
       "img": "/images/routeplant/route2.png",
-      "link": "/codelab/studyplant/backEnd",
+      "link": "/studyplant/backEnd",
       "title": "Lộ trình Back-End",
-      "description": "Học cách xây dựng các ứng dụng web mạnh mẽ với các ngôn ngữ phổ biến như Node.js, Python, hoặc Java, làm việc với cơ sở dữ liệu (SQL và NoSQL), thiết kế API, quản lý xác thực và bảo mật hệ thống.."
+      "description": "Học cách xây dựng ứng dụng web mạnh mẽ với Node.js, Python, Java, cùng cơ sở dữ liệu SQL, NoSQL, thiết kế API và bảo mật hệ thống"
     }
   ],
-  "Facebookcomunity": [
+  "FacebookCommunity": [
     {
       "id": 1,
       "img": "/images/routeplant/comunity.png",
       "title": "Cộng đồng CodeLab",
-      "description": "Một cộng đồng sẽ giúp chúng ta có động lực và học hỏi nhiều hơn. Hãy tham gia cộng đồng của chúng tôi để cùng nhau phát triển hơn nữa. CodeLab rất vui được đồng hành cùng các bạn."
+      "description": "Tham gia cộng đồng của chúng tôi để cùng nhau phát triển và học hỏi, với CodeLab, bạn sẽ không đơn độc trên hành trình lập trình!"
     }
   ],
   "FrontEnd": [
     {
       "id": 1,
       "img": "/images/frontend/frontend1.png",
-      "link": "/codelab/studyplant/frontEnd/htmlcss",
+      "link": "/studyplant/frontEnd/htmlcss",
       "title": "Khóa học HTML và CSS",
       "description": "HTML và CSS là nền tảng quan trọng trong lập trình web giúp tạo ra các trang web hoàn chỉnh, HTML định hình cấu trúc và nội dung của trang trong khi CSS tạo ra phong cách bố cục và trải nghiệm người dùng."
     },
     {
       "id": 2,
       "img": "/images/frontend/frontend2.png",
-      "link": "/codelab/studyplant/frontEnd/javascript",
+      "link": "/studyplant/frontEnd/javascript",
       "title": "Khóa học JavaScript",
       "description": "JavaScript là một ngôn ngữ lập trình quan trọng trong phát triển web, giúp các trang web có các tương tác động. Khác với HTML và CSS chỉ dùng để cấu trúc và định hạng, JavaScript cho phép bạn thực hiện các.."
     },
     {
       "id": 3,
       "img": "/images/frontend/frontend3.png",
-      "link": "/codelab/studyplant/frontEnd/reactjs",
+      "link": "/studyplant/frontEnd/reactjs",
       "title": "Khóa học React JS",
       "description": "Tạo các thành phần giao diện (components), quản lý trạng thái (state), và xử lý sự kiện hiệu quả trong React.."
     },
     {
       "id": 4,
       "img": "/images/frontend/frontend4.png",
-      "link": "/codelab/studyplant/frontEnd/abc",
+      "link": "/studyplant/frontEnd/abc",
       "title": "Comming Soon",
       "description": "Các khóa học khác sẽ được chúng tôi liên tục cập nhật và phát triển, chúng tôi sẽ mang lại nhiều ứng dụng và khóa học hay hơn cho các bạn.."
     }
@@ -212,28 +161,28 @@
     {
       "id": 1,
       "img": "/images/backend/backend1.png",
-      "link": "/codelab/studyplant/backEnd/sql",
+      "link": "/studyplant/backEnd/sql",
       "title": "Khóa học SQL",
       "description": "Học cách sử dụng các câu lệnh SQL để truy vấn, thao tác và quản lý dữ liệu, từ các lệnh cơ bản như SELECT, INSERT, UPDATE, DELETE đến các khái niệm nâng cao như JOIN, GROUP BY, và INDEX.."
     },
     {
       "id": 2,
       "img": "/images/backend/backend2.png",
-      "link": "/codelab/studyplant/backEnd/resapi",
+      "link": "/studyplant/backEnd/resapi",
       "title": "Khóa học REST API với Spring Boot",
       "description": "Học cách thiết kế và phát triển API theo chuẩn RESTful, xử lý các phương thức HTTP (GET, POST, PUT, DELETE), quản lý dữ liệu với cơ sở dữ liệu, và triển khai các kỹ thuật bảo mật như xác thực JWT.."
     },
     {
       "id": 3,
       "img": "/images/backend/backend3.png",
-      "link": "/codelab/studyplant/backEnd/aws",
+      "link": "/studyplant/backEnd/aws",
       "title": "Khóa học AWS (Amazon S3)",
       "description": "Học cách tạo và quản lý các bucket, tải lên và truy xuất dữ liệu, thiết lập quyền truy cập, và cấu hình bảo mật cho tài nguyên lưu trữ.."
     },
     {
       "id": 4,
       "img": "/images/backend/backend4.png",
-      "link": "/codelab/studyplant/backEnd",
+      "link": "/studyplant/backEnd",
       "title": "Comming Soon",
       "description": "Các khóa học khác sẽ được chúng tôi liên tục cập nhật và phát triển, chúng tôi sẽ mang lại nhiều ứng dụng và khóa học hay hơn cho các bạn.."
     }
@@ -372,28 +321,28 @@
     {
       "id": 1,
       "img": "/images/frontend/frontend1.png",
-      "link": "/codelab/studyplant/frontEnd/flashcard_htmlcss",
+      "link": "/studyplant/frontEnd/flashcard_htmlcss",
       "title": "Khóa học HTML và CSS",
       "description": "HTML và CSS là nền tảng quan trọng trong lập trình web giúp tạo ra các trang web hoàn chỉnh, HTML định hình cấu trúc và nội dung của trang trong khi CSS tạo ra phong cách bố cục và trải nghiệm người dùng."
     },
     {
       "id": 2,
       "img": "/images/frontend/frontend2.png",
-      "link": "/codelab/studyplant/frontEnd/flashcard_javascript",
+      "link": "/studyplant/frontEnd/flashcard_javascript",
       "title": "Khóa học JavaScript",
       "description": "JavaScript là một ngôn ngữ lập trình quan trọng trong phát triển web, giúp các trang web có các tương tác động. Khác với HTML và CSS chỉ dùng để cấu trúc và định hạng, JavaScript cho phép bạn thực hiện các.."
     },
     {
       "id": 3,
       "img": "/images/frontend/frontend3.png",
-      "link": "/codelab/studyplant/frontEnd/flashcard_reactjs",
+      "link": "/studyplant/frontEnd/flashcard_reactjs",
       "title": "Khóa học React JS",
       "description": "Tạo các thành phần giao diện (components), quản lý trạng thái (state), và xử lý sự kiện hiệu quả trong React.."
     },
     {
       "id": 4,
       "img": "/images/frontend/frontend4.png",
-      "link": "/codelab/studyplant/frontEnd/abc",
+      "link": "/studyplant/frontEnd/abc",
       "title": "Comming Soon",
       "description": "Các khóa học khác sẽ được chúng tôi liên tục cập nhật và phát triển, chúng tôi sẽ mang lại nhiều ứng dụng và khóa học hay hơn cho các bạn.."
     }

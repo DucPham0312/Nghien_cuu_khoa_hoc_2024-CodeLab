@@ -1,5 +1,5 @@
 /*
-    The code was written by programmer Truong Tuan Anh
+    The code was written by programmer CodeLab
     Thanks for watching and sharing !!!
 */
 html {
@@ -60,4 +60,23 @@ html {
   --background-flashcard: #eee;
   --background-default-button: #eee;
   --background-welcome: #eeee;
+  --background__lesson: #f6f6f6;
+  --boxShadow__lesson: rgba(237, 237, 246, 0.2);
+  --background--color-tag: #f2f2f2;
+  --color-text-study: #333;
+  //profile
+  --profile-sidebar-bg: #fff;
+  --profile-sidebar-shadow: rgba(237, 237, 246, 0.2);
+  --profile-hover-link-bg: #ebebeb;
+
+  //account infor
+  --account-info-bg: #f6f6f6;
+  --account-info-icon-bg: #fff;
+  --account-background-color-light: #ccc;
+
+  //create-blog
+  --stroke-tool-bar: #444;
+  --form-profile: #f6f6f6;
+
+  --background-button-text: #eeeeee;
 }

@@ -1,6 +1,7 @@
 .quote {
   margin-top: 30px;
   &__wrap {
+    border-radius: 3px;
     padding: 20px;
     background: var(--background-quote);
     border-left: 10px solid #fbe8e8;
@@ -9,7 +10,7 @@
     gap: 10px;
   }
   &__title {
-    font-size: 1.4rem;
+    font-size: 1rem !important;
     font-weight: 600;
     color: var(--text-color-main-light);
     line-height: 140%;

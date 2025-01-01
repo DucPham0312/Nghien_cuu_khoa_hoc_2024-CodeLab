@@ -1,19 +1,20 @@
-// The code was written by programmer Truong Tuan Anh
+// The code was written by programmer CodeLab
 // Thanks for watching and sharing
 import React from "react";
 import { useState } from "react";
-import { Navigate, NavLink, useNavigate } from "react-router-dom";
+import { Navigate, NavLink } from "react-router-dom";
 import { Validation } from "../../services/Validation";
-import Logo from "../../components/logo";
+import Logo from "../../components/LogoMain";
 import {
   doSignInWithEmailAndPassword,
   doSignInWithGoogle,
-} from "../../firebase/auth";
-import { useAuth } from "../../context/authContext/index";
-import { Toast } from "../../components/toasterror";
+} from "../../firebase/Auth";
+import { useAuth } from "../../context/auth-context/Index";
+import { Toast } from "../../components/ToastError";
+import NProgress from "nprogress";
+import "nprogress/nprogress.css";
 export const Login = () => {
   const { userLoggedIn } = useAuth();
-  const navigate = useNavigate();
   const [isSigningIn, setIsSigningIn] = useState(false);
   const [error, setError] = useState({});
   const [values, setValues] = useState({});
@@ -32,10 +33,10 @@ export const Login = () => {
       setIsShowToast(false);
     }, 4000);
   };
-  const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
   const { email, password } = values;
   const handleSubmit = async (e) => {
     e.preventDefault();
+    NProgress.start();
     setError(Validation(values));
     if (!isSigningIn) {
       setIsSigningIn(true);
@@ -43,23 +44,26 @@ export const Login = () => {
         await doSignInWithEmailAndPassword(email, password);
       } catch (error) {
         showToast();
-        await delay(4000); // Chờ 2000ms (2 giây)
-        navigate("/codelab/login");
+        setIsSigningIn(false);
       }
     }
+    NProgress.done();
   };
   const onGoogleSignIn = (e) => {
     e.preventDefault();
+    NProgress.start();
     if (!isSigningIn) {
       setIsSigningIn(true);
       doSignInWithGoogle().catch((err) => {
+        console.log(err);
         setIsSigningIn(false);
       });
     }
+    NProgress.done();
   };
   return (
     <div>
-      {userLoggedIn && <Navigate to={"/codelab/home"} replace={true} />}
+      {userLoggedIn && <Navigate to={"/home"} replace={true} />}
       <div className="login">
         <div
           className={`row row-cols-2 row-cols-md-1 login__wrap ${
@@ -70,7 +74,7 @@ export const Login = () => {
             <div className="login__background ">
               <div className="login__image">
                 <img
-                  src={`${process.env.PUBLIC_URL}/images/login/img1.png`}
+                  src={`${process.env.PUBLIC_URL}/images/login/img1.svg`}
                   alt=""
                   className="login__img"
                 />
@@ -187,10 +191,7 @@ export const Login = () => {
                     </div>
                     <p className="input__default--title">Đặt làm mặc định</p>
                   </div>
-                  <NavLink
-                    to="./codelab/resetpassword"
-                    className="input__forgot"
-                  >
+                  <NavLink to="./resetpassword" className="input__forgot">
                     Quên mật khẩu ?
                   </NavLink>
                 </div>
@@ -214,10 +215,7 @@ export const Login = () => {
                 </div>
                 <p className="login__signUp">
                   Bạn chưa có tài khoản?{" "}
-                  <NavLink
-                    to="/codelab/signup"
-                    className="login__signUp--highlight"
-                  >
+                  <NavLink to="/signup" className="login__signUp--highlight">
                     Đăng ký ngay
                   </NavLink>
                 </p>

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export const Gift = () => {
   return (
-    <NavLink to="/codelab/gift" className="gift">
+    <NavLink to="/gift" className="gift">
       <div className="gift__wrap">
         <div className="gift__image--wrap">
           <img

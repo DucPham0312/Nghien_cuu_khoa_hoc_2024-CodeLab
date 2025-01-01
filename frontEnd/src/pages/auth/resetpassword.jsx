@@ -1,23 +1,28 @@
-// The code was written by programmer Truong Tuan Anh
+// The code was written by programmer CodeLab
 // Thanks for watching and sharing
 import React from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "../../components/logo";
-import { doPasswordReset } from "../../firebase/auth";
+import Logo from "../../components/LogoMain";
+import { doPasswordReset } from "../../firebase/Auth";
 import { validateEmail } from "../../services/ValidationEmail";
+import NProgress from "nprogress";
+import "nprogress/nprogress.css";
 export const ResetPassword = () => {
   const [error, setError] = useState({});
   const [values, setValues] = useState({});
   const [show, setShow] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
   const handleChange = (e) => {
+    NProgress.start();
     setValues({
       ...values, // sao chép lại đối tượng cũ
       [e.target.name]: e.target.value, // cập nhật giá trị dựa trên name
     });
+    NProgress.done();
   };
   const handleSubmit = (e) => {
+    NProgress.start();
     e.preventDefault();
     const validationErrors = validateEmail(values.email);
     setError(validationErrors);
@@ -33,6 +38,7 @@ export const ResetPassword = () => {
           setError(error);
         });
     }
+    NProgress.done();
   };
   return (
     <div className="reset">
@@ -127,10 +133,7 @@ export const ResetPassword = () => {
                   <div className="input__notification--success">
                     <p className="input__success--text">
                       {successMessage}
-                      <NavLink
-                        to="/codelab/login"
-                        className="input__success-backLogin"
-                      >
+                      <NavLink to="/login" className="input__success-backLogin">
                         Đăng nhập ngay
                       </NavLink>
                     </p>
@@ -139,10 +142,7 @@ export const ResetPassword = () => {
               </div>
               <p className="reset__signUp">
                 Bạn chưa có tài khoản?
-                <NavLink
-                  to="/codelab/signup"
-                  className="reset__signUp--highlight"
-                >
+                <NavLink to="/signup" className="reset__signUp--highlight">
                   Đăng ký ngay
                 </NavLink>
               </p>

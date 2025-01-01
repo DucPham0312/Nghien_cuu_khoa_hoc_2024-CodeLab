@@ -1,0 +1,119 @@
+.profile {
+  &-container {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  &-info {
+    margin-top: 0;
+  }
+  &__bg {
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background: var(--profile-sidebar-bg);
+    border-radius: 10px;
+  }
+  &__desc {
+    color: var(--color-text-2);
+    margin-bottom: 16px;
+  }
+  &__user {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #379958 0%, #032a0c 100%);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0px 0px;
+    &--avatar {
+      width: 116px;
+      height: 116px;
+      border-radius: 116px;
+      border: 5px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0px 4px 14px 2px rgba(0, 0, 0, 0.08);
+    }
+    &--name {
+      margin-top: 10px;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 144.444%;
+    }
+    &--desc {
+      margin-top: 2px;
+      color: #fafafd;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 146.667%;
+    }
+  }
+  &__sidebar {
+    padding-bottom: 20px;
+    border-radius: 20px;
+    background: var(--profile-sidebar-bg);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  &-menu {
+    padding: 20px 30px 0 30px;
+    &__title {
+      color: var(--text-color-main-light);
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 144.444%; /*  */
+    }
+    &__list {
+      margin-top: 17px;
+    }
+    &__link {
+      color: var(--color-text-2);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 5px 10px 5px 10px;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 146.667%; /* */
+      transition: background-color 0.2s;
+      &:hover {
+        background: var(--profile-hover-link-bg);
+        border-radius: 5px;
+      }
+    }
+
+    &__icon {
+      height: 100%;
+      width: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__heading {
+    white-space: nowrap;
+    color: var(--text-color-main-light);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  &__desc {
+    max-width: 483px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 128%;
+  }
+  &__separate {
+    width: 100%;
+    margin: 30px 0;
+  }
+  &__active {
+    width: 100%;
+    border-radius: 10px;
+    background: var(--account-background-color-light);
+    color: var(--text-color-main-light);
+    font-weight: 600;
+  }
+  &-menu__link {
+    width: 100%;
+  }
+}

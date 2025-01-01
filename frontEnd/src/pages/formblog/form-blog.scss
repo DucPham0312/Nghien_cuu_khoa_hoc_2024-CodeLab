@@ -1,0 +1,268 @@
+html {
+  --color-text-blog: #333; /* Đặt màu văn bản mặc định */
+  --color-link: #ffb900; /* Màu cho liên kết */
+  --line-height: 1.6; /* Chiều cao dòng mặc định */
+  --font-size-base: 1.1rem; /* Kích thước phông chữ cơ bản */
+  --font-size-heading: 2rem; /* Kích thước phông chữ cho tiêu đề */
+}
+
+html.dark {
+  --color-text-blog: #9e9da8; /* Đặt màu văn bản mặc định */
+  --color-link: #ffb900; /* Màu cho liên kết */
+  --line-height: 1.6; /* Chiều cao dòng mặc định */
+  --font-size-base: 1.1rem; /* Kích thước phông chữ cơ bản */
+  --font-size-heading: 3rem; /* Kích thước phông chữ cho tiêu đề */
+}
+
+.blog {
+  font-family: "Pridi", serif;
+  line-height: var(--line-height);
+}
+
+/* Các đoạn văn bản trong blog */
+.blog p {
+  color: var(--color-text-blog);
+  line-height: 2.5;
+  margin-top: 10px;
+}
+
+/* Các tiêu đề trong blog */
+.blog h1 {
+  font-family: "Poppins", serif;
+  margin: 20px 0 10px; /* Đặt margin trên và dưới */
+  font-size: 2rem; /* Kích thước font cho h1 */
+  line-height: 1.2; /* Chiều cao dòng cho tiêu đề */
+  font-weight: 600; /* Độ đậm chữ */
+  color: var(--color-text); /* Màu chữ */
+}
+
+.blog h2 {
+  font-family: "Poppins", serif;
+  margin: 20px 0 10px; /* Đặt margin trên và dưới */
+  font-size: 1.75rem; /* Kích thước font cho h2 */
+  line-height: 1.2; /* Chiều cao dòng cho tiêu đề */
+  font-weight: 600; /* Độ đậm chữ */
+  color: var(--color-text); /* Màu chữ */
+}
+
+.blog h3 {
+  font-family: "Poppins", serif;
+  margin: 20px 0 10px; /* Đặt margin trên và dưới */
+  font-size: 1.5rem; /* Kích thước font cho h3 */
+  line-height: 1.2; /* Chiều cao dòng cho tiêu đề */
+  font-weight: 600; /* Độ đậm chữ */
+  color: var(--color-text); /* Màu chữ */
+}
+
+.blog h4 {
+  margin: 20px 0 10px; /* Đặt margin trên và dưới */
+  font-size: 1.25rem; /* Kích thước font cho h4 */
+  line-height: 1.2; /* Chiều cao dòng cho tiêu đề */
+  font-weight: 600; /* Độ đậm chữ */
+  color: var(--color-text); /* Màu chữ */
+}
+
+.blog h5,
+.blog h6 {
+  margin: 20px 0 10px; /* Đặt margin trên và dưới */
+  font-size: var(--font-size-heading); /* Kích thước font cho h5, h6 */
+  line-height: 1.2; /* Chiều cao dòng cho tiêu đề */
+  font-weight: 600; /* Độ đậm chữ */
+  color: var(--color-text); /* Màu chữ */
+}
+
+/* Các liên kết trong blog */
+.blog li a {
+  color: var(--color-link) !important;
+  text-decoration: none; /* Loại bỏ gạch chân mặc định của liên kết */
+}
+
+.blog a:hover {
+  text-decoration: underline; /* Gạch chân khi di chuột qua liên kết */
+}
+
+/* Các kiểu cho danh sách không có thứ tự */
+.blog ul,
+.blog ol {
+  margin: 0 0 20px; /* Đặt margin dưới để tạo khoảng cách */
+  padding-left: 20px; /* Đặt padding trái cho danh sách */
+}
+
+.blog li {
+  list-style: disc;
+  margin-top: 20px;
+  margin-bottom: 10px; /* Đặt margin dưới cho mỗi mục danh sách */
+  color: var(--color-text-blog);
+  line-height: 1.5;
+}
+
+.blog p br {
+  content: ""; /* Tạo nội dung rỗng để có thể định nghĩa kiểu */
+  line-height: 1; /* Bỏ line-height cho <br> để không làm tăng khoảng cách */
+  display: block; /* Biến <br> thành block để dễ điều chỉnh */
+  margin: 0; /* Không có khoảng cách thêm */
+}
+.blog p img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.blog strong {
+  font-weight: 600;
+  color: var(--text-color-main-light);
+}
+/* Responsive styles */
+@media (max-width: 1200px) {
+  html {
+    --font-size-base: 1rem; /* Giảm kích thước phông chữ cơ bản cho màn hình nhỏ hơn */
+    --font-size-heading: 2.5rem; /* Giảm kích thước phông chữ tiêu đề cho màn hình nhỏ hơn */
+  }
+}
+
+@media (max-width: 992px) {
+  .blog p {
+    font-size: 0.9rem; /* Giảm kích thước phông chữ cho đoạn văn bản */
+  }
+
+  .blog h1,
+  .blog h2,
+  .blog h3 {
+    font-size: 2rem; /* Giảm kích thước phông chữ tiêu đề */
+  }
+}
+
+@media (max-width: 768px) {
+  .blog {
+    padding: 0 15px; /* Thêm padding cho các phần tử blog */
+  }
+
+  .blog p {
+    margin-top: 8px; /* Giảm margin cho đoạn văn bản */
+  }
+
+  .blog li {
+    font-size: 0.8rem; /* Giảm kích thước phông chữ cho mục danh sách */
+  }
+}
+
+@media (max-width: 576px) {
+  .blog h1 {
+    font-size: 1.5rem; /* Giảm kích thước tiêu đề h1 cho màn hình rất nhỏ */
+  }
+
+  .blog h2 {
+    font-size: 1.3rem; /* Giảm kích thước tiêu đề h2 cho màn hình rất nhỏ */
+  }
+
+  .blog h3 {
+    font-size: 1.2rem; /* Giảm kích thước tiêu đề h3 cho màn hình rất nhỏ */
+  }
+
+  .blog p {
+    font-size: 0.85rem; /* Giảm kích thước phông chữ cho đoạn văn bản */
+  }
+}
+.font-controls {
+  position: absolute;
+  top: 45px;
+  left: -170px;
+  background: var(--background__breadcrumb);
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+  color: #cfd8dc;
+  font-family: Arial, sans-serif;
+}
+
+.font-controls__label {
+  font-size: 14px;
+  margin: 10px 0 5px;
+  color: var(--color-text);
+}
+
+.font-size-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.font-size-btn {
+  background: var(--background-button-text);
+  border: none;
+  border-radius: 5px;
+  color: var(--color-text);
+  padding: 5px 8px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.font-size-display {
+  font-size: 1rem;
+  color: var(--color-text);
+  font-weight: bold;
+}
+
+.font-size-btn:hover {
+  scale: 1.01;
+}
+
+.font-style-select {
+  width: 100%;
+  background: var(--background-button-text);
+  color: var(--color-text);
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.font-style-select:focus {
+  outline: none;
+}
+.form__icon {
+  user-select: none;
+  height: 16px;
+  width: 16px;
+}
+.form__icon-settings {
+  width: 20px;
+  height: 20px;
+}
+
+.form__button {
+  align-self: flex-end;
+  padding: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background__breadcrumb);
+}
+.form__lable {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--color-text);
+  font-size: 1rem;
+}
+.blog__action-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ql-syntax {
+  padding: 10px;
+  background-color: #f5f5f5; /* Màu nền */
+  color: #d9534f; /* Màu chữ */
+  font-weight: bold;
+}

@@ -1,0 +1,139 @@
+// The code was written by programmer CodeLab
+// Thanks for watching and sharing
+
+@use "../abstracts";
+.product {
+  &__heading {
+    margin-top: 30px;
+    color: var(--text-color-main-light);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 123.81%;
+    @include abstracts.breakpoint(md) {
+      font-size: 1.2rem;
+    }
+  }
+  &__desc {
+    max-width: 100%;
+    margin-top: 18px;
+    color: var(--color-text-2);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 128%;
+  }
+  &__list {
+    margin-top: 40px;
+  }
+  &__item {
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  &__info-user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__item {
+    border-radius: 10px;
+    margin-bottom: 30px;
+    &--top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &--bottom {
+      margin-top: 20px;
+    }
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+  &__action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  &__info-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    &--img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+  }
+  &__user-name {
+    font-size: 1rem;
+    color: var(--text-color-main-light);
+    font-weight: 600;
+    margin-left: 8px;
+  }
+  &__title {
+    font-size: 1.2rem;
+    color: var(--text-color-main-light);
+    font-weight: 700;
+    line-height: 120%;
+    @include abstracts.breakpoint(md) {
+      font-size: 1rem;
+    }
+  }
+  &__item--desc {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--text-color-main-light);
+    @include abstracts.breakpoint(md) {
+      font-size: 0.8rem;
+    }
+  }
+  &__info {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  &__tag {
+    padding: 4px 10px 6px;
+    border-radius: 100px;
+    background-color: var(--background--color-tag);
+    color: var(--text-color-main-light);
+    line-height: 1rem;
+    font-weight: 500;
+  }
+  &__gift {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  &__link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__time {
+    color: var(--text-color-main-light);
+    line-height: 1rem;
+    font-weight: 500;
+  }
+  &__pagination {
+    margin-bottom: 30px;
+  }
+}

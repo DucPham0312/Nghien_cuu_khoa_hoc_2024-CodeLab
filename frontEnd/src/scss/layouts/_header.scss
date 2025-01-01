@@ -1,4 +1,4 @@
-// The code was written by programmer Truong Tuan Anh
+// The code was written by programmer CodeLab
 // Thanks for watching and sharing
 
 @use "../abstracts";
@@ -14,8 +14,9 @@
     transition: background 0.2s ease;
     & a {
       padding: 10px;
-      &:hover {
-        color: var(--main-color-dark);
+      color: var(--main-color-dark);
+      @include abstracts.breakpoint(md) {
+        color: var(--main-color-white);
       }
     }
   }
@@ -28,17 +29,17 @@
   &__btn--login {
     border: 1px solid var(--main-color-dark);
     background: var(--main-color-white);
-
-    @include abstracts.breakpoint(md) {
-      border: none;
-    }
     &:hover {
       background: var(--main-color-grey);
     }
     & a {
       &:hover {
-        color: var(--main-color-dark);
+        color: var(--text-color-main-light);
       }
+    }
+    @include abstracts.breakpoint(md) {
+      background: #292e39;
+      border: 1px solid var(--main-color-white);
     }
   }
   &__wrap {
@@ -56,6 +57,7 @@
     gap: 30px;
     @include abstracts.breakpoint(md) {
       gap: 14px;
+      margin-right: 0;
     }
   }
   &__notification {
@@ -205,8 +207,8 @@
       align-items: center;
     }
     &--avatar {
-      width: 60px;
-      height: 60px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
       object-fit: contain;
     }
@@ -217,8 +219,11 @@
       line-height: 128%;
     }
     &--id {
+      display: flex;
+      width: 100px;
+      flex-wrap: wrap;
       margin-top: 8px;
-      font-size: 1rem;
+      font-size: 0.8rem;
       font-weight: 300;
       line-height: 100%;
       color: var(--color-text-2);
@@ -244,6 +249,53 @@
     }
     &--theme {
       margin-top: 10px;
+    }
+  }
+  &__search {
+    width: 400px;
+    min-height: 300px;
+    position: absolute;
+    top: 71px;
+    right: 150px;
+    background: var(--background--color-main-3);
+    z-index: 3;
+    border-radius: 20px;
+    box-shadow: 0 -4px 32px var(--box-shadow-main-2);
+    @include abstracts.breakpoint(md) {
+      inset: 0;
+      height: 100vh;
+    }
+    &--img {
+      width: 100px;
+      height: 60px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    &--desc {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--main-color);
+      line-height: 100%;
+    }
+    &--title {
+      font-weight: 400;
+      line-height: 148%;
+      color: var(--color-text);
+      & strong {
+        font-weight: 600;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &--content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    &--list {
+      margin-top: 15px;
+      overflow-y: auto;
     }
   }
 }

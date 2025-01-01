@@ -1,4 +1,4 @@
-// The code was written by programmer Truong Tuan Anh
+// The code was written by programmer CodeLab
 // Thanks for watching and sharing
 
 @keyframes gradientAnimation {
@@ -82,5 +82,10 @@
 @keyframes fadeOut {
   to {
     opacity: 0;
+  }
+}
+@keyframes l11 {
+  100% {
+    transform: translateY(calc(var(--s, 1) * 0.1%));
   }
 }

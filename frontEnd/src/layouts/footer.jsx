@@ -1,8 +1,8 @@
-// The code was written by programmer Truong Tuan Anh
+// The code was written by programmer CodeLab
 // Thanks for watching and sharing
 
 import React from "react";
-import Logo from "../components/logo";
+import Logo from "../components/LogoMain";
 import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
@@ -123,12 +123,12 @@ export const Footer = () => {
                 </Link>
               </li>
               <li className="footer__item">
-                <Link to="/codelab/home" className="footer__link">
+                <Link to="/home" className="footer__link">
                   Trang chủ
                 </Link>
               </li>
               <li className="footer__item">
-                <Link to="/codelab/blog" className="footer__link">
+                <Link to="/blog" className="footer__link">
                   Blog{" "}
                 </Link>
               </li>
@@ -151,7 +151,7 @@ export const Footer = () => {
               </li>
               <li className="footer__item">
                 <Link className="footer__link">
-                  <span>Founder :</span> Trương Tuấn Anh
+                  <span>Founder :</span> CodeLab
                 </Link>
               </li>
               <li className="footer__item">

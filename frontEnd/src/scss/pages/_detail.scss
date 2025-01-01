@@ -1,0 +1,199 @@
+// The code was written by programmer CodeLab
+// Thanks for watching and sharing
+
+@use "../abstracts";
+.detail {
+  &__main {
+    margin-top: 40px;
+  }
+  &__heading {
+    color: var(--text-color-main-light);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 123.81%;
+    @include abstracts.breakpoint(md) {
+      font-size: 1.6rem;
+    }
+  }
+  &__desc {
+    color: var(--color-text-2);
+    margin-top: 20px;
+    font-weight: 500;
+    line-height: 148%;
+    @include abstracts.breakpoint(md) {
+      margin-top: 10px;
+    }
+  }
+  &__reward {
+    margin-top: 30px;
+
+    &--list {
+      margin-top: 30px;
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        margin-top: 20px;
+        color: var(--color-text-2);
+        margin-top: 8px;
+        font-weight: 500;
+        line-height: 150%;
+        height: 40px;
+        font-size: 1rem;
+      }
+    }
+    @include abstracts.breakpoint(md) {
+      margin-top: 20px;
+    }
+  }
+  &__icon,
+  &__check--icon {
+    width: 20px;
+    height: 20px;
+    @include abstracts.breakpoint(md) {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  &__background {
+    width: 90%;
+  }
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: var(--boxshadow-main) 0px 7px 29px 0px;
+    padding: 40px 10px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    & .btn {
+      width: 90%;
+    }
+  }
+  &__img {
+    width: 100%;
+    border-radius: 20px;
+    height: 200px;
+  }
+  &__price {
+    color: var(--main-color);
+    margin-top: 25px;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  &__register {
+    margin-top: 20px;
+    width: 80%;
+    background: var(--main-color);
+    transition: all 0.2s ease;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+  &__register-lg {
+    width: 100%;
+  }
+  &__includes {
+    margin-top: 20px;
+    margin-left: 30px;
+    align-self: flex-start;
+    &--heading {
+      color: var(--text-color-main-light);
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+  }
+  &__item {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  &__text {
+    color: var(--color-text-2);
+    line-height: 128%;
+    font-weight: 500;
+  }
+  &__content {
+    margin-top: 30px;
+  }
+  &__info {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--left {
+      align-items: center;
+      display: flex;
+      gap: 20px;
+    }
+    @include abstracts.breakpoint(md) {
+      gap: 10px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__extend--button {
+    font-size: 1.05rem;
+    color: var(--main-color);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__list {
+    margin-top: 30px;
+  }
+  &__item--info {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: var(--background__breadcrumb);
+    padding: 20px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    @include abstracts.breakpoint(md) {
+      gap: 10px;
+      flex-direction: column;
+    }
+  }
+  &__item--wrap {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  &__item-text {
+    color: var(--text-color-main-light);
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 128%;
+    @include abstracts.breakpoint(md) {
+      font-size: 1rem;
+    }
+  }
+  &__item--desc {
+    color: var(--color-text-2);
+    line-height: 128%;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  &__lecture {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  &__md--button {
+    & .btn {
+      width: 100%;
+    }
+  }
+}

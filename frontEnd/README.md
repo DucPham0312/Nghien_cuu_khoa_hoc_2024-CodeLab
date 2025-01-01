@@ -4,7 +4,7 @@
 
 ## THÀNH VIÊN CỦA NHÓM
 
-1. **Trương Tuấn Anh** (chủ nhiệm đề tài): 0373696603
+1. **CodeLab** (chủ nhiệm đề tài): 0373696603
 2. **Phạm Minh Đức**
 3. **Phạm Văn Dũng**
 4. **Vũ Thị Như Quỳnh**
@@ -19,7 +19,7 @@
 
 ## NHIỆM VỤ
 
-1. **Front-End + Designer**: Trương Tuấn Anh (leader)
+1. **Front-End + Designer**: CodeLab (leader)
 2. **Back-End**: Phạm Minh Đức (leader)
 3. **Tester**: Vũ Thị Như Quỳnh
 4. **Cover**: Phạm Văn Dũng
